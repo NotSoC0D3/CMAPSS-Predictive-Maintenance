@@ -1,0 +1,15 @@
+# Data Manipulation & Array Operations
+pandas
+numpy
+
+# Data Visualization
+matplotlib
+seaborn
+
+# Machine Learning & Deep Learning
+tensorflow
+scikit-learn
+
+# Signal Processing
+pykalman
+PyWavelets
