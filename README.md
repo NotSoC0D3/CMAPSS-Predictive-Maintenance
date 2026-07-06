@@ -15,7 +15,7 @@ The final pipeline utilizes 1D Kalman Filtering and Level-1 Discrete Wavelet Tra
 ├── data/
 │   └── raw/                    # Contains C-MAPSS subsets (train_FD001.txt, test_FD001.txt)
 ├── notebooks/
-│   └── CMAPSS.ipynb # EDA, feature selection, signal processing, training, evaluation and visualization
+│   └── CMAPSS.ipynb            # EDA, feature selection, signal processing, training, evaluation and visualization
 ├── src/
 │   ├── __init__.py             # Library router
 │   ├── data_load.py            # Data ingestion
