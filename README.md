@@ -4,16 +4,16 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## 📌 Overview
+##  Overview
 This repository contains a deep learning framework for predicting the Remaining Useful Life (RUL) of turbofan engines using the NASA C-MAPSS FD001 dataset. The project evaluates the efficacy of advanced signal processing combined with recurrent neural networks and self-attention mechanisms.
 
 The final pipeline utilizes 1D Kalman Filtering and Level-1 Discrete Wavelet Transforms (DWT) to extract high-fidelity frequency features, feeding into a custom **Bidirectional LSTM + Multi-Head Attention** architecture to achieve highly accurate RUL forecasting.
 
-## 🏗️ Repository Structure
+##  Repository Structure
 
 ```text
 ├── data/
-│   └── raw/                 # Contains C-MAPSS subsets (train_FD001.txt, test_FD001.txt)
+│   └── raw/                    # Contains C-MAPSS subsets (train_FD001.txt, test_FD001.txt)
 ├── notebooks/
 │   └── CMAPSS.ipynb # EDA, feature selection, signal processing, training, evaluation and visualization
 ├── src/
@@ -23,14 +23,14 @@ The final pipeline utilizes 1D Kalman Filtering and Level-1 Discrete Wavelet Tra
 │   ├── preprocess.py           # Kalman filters, DWT, and scaling
 │   ├── sequence_generator.py   # Sliding window formatting
 │   └── train.py                # Main execution and training orchestrator
-├── weights/                 # Saved .keras models and MinMaxScaler (.pkl)
+├── weights/                    # Saved .keras models and MinMaxScaler (.pkl)
 ├── .gitignore
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
-# 🧠 Model Architecture
+#  Best Model Architecture
 
 The primary model executed in this repository is a custom BiLSTM + Attention network.
 
@@ -40,7 +40,7 @@ The primary model executed in this repository is a custom BiLSTM + Attention net
 
 3. Stability: Residual connections bypass the attention block to prevent vanishing gradients problem during early training epochs.
 
-# 🏆 Key Results
+#  Key Results
 
 Model performance is evaluated using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). The integration of self-attention significantly improved the network's ability to isolate failure patterns.
 
